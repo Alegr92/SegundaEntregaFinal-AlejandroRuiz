@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Proyecto final 2 entrega</title>
+</head>
+
+<body>
+  <!-- SECCION NAVBAR -->
+  <nav>
+    <div class="logos">
+      <img class="logo" src="./Assets/logo.png" alt="">
+      <img class="logo" src="./Assets/logops5.png" alt="">
+    </div>
+
+    <div class="div-title">
+      <h1 class="title text-flicker-in-glow">GAMEOVER<span class="title2"> GAMES</span></h1>
+    </div>
+    <div class="categories">
+      <a href="#products-switch">Switch </a>
+      <a href="#products-ps5">Ps5 </a>
+      <div class="carrito-container">
+        <div class="circle">
+        </div>
+        <p class="carrito">🛒</p>
+      </div>
+    </div>
+  </nav>
+  <!-- SECCION DEL CARRITO -->
+  <section class="carrito-window">
+    <div class="carrito-visible">
+      <p>Game Over Games</p>
+      <p>Tu carrito esta vacio</p>
+    </div>
+    <!-- TEMPLATE DEL CARRITO -->
+    <template id="template-carrito">
+      <div class="flex">
+        <p class="id"></p>
+        <div class="div-main-img">
+          <img class="main-img-carrito" src="" alt="">
+        </div>
+        <div class="div-title-carrito">
+          <p class="title-carrito"></p>
+        </div>
+        <div class="buttons">
+          <p class="up">🔺</p>
+          <p class="mid-p"></p>
+          <p class="down">🔻</p>
+        </div>
+        <p class="price"></p>
+        <p class="sub-price"></p>
+        <img src="" alt="" class="delete">
+      </div>
+    </template>
+    <!-- SECCION TOTAL A PAGAR -->
+    <!-- <div class="carrito-total">
+      <p class="total-p"></p>
+      <button class="total-buy"></button>
+    </div> -->
+  </section>
+  <!-- HERO IMG -->
+  <div class="hero">
+    <img src="./Assets/hero1.jpg" alt="">
+  </div>
+  <!-- SECCION INGRESOS SLIDER -->
+  <section class="news">
+    <h2 class="title-news">Ultimos ingresos</h2>
+    <p>Aca va un slider</p>
+  </section>
+  <!-- SECCION OFERTA -->
+  <section class="offer">
+    <div class="offer-img">
+      <img src="./Assets/estuche.png" alt="">
+    </div>
+    <div class="offer-text">
+      <h3>Con la compra de dos o mas juegos, llevate de regalo esta funda para tu switch!!</h3>
+    </div>
+  </section>
+  <!-- SECCION PRODUCTOS SWITCH-->
+  <section id="products-switch">
+    <h2 class="title-products">Catalogo de juegos Switch</h2>
+    <div class="products-switch">
+      <!-- TEMPLATE DE CADA PRODUCTO -->
+      <template id="template-card">
+        <div class="card">
+          <img class="main-img" src="" alt="">
+          <div class="back">
+            <img class="sec-img" src="" alt="">
+            <pre></pre>
+          </div>
+          <p class="title-card">titulo</p>
+          <p class="price-card">precio</p>
+          <button>Agregar 🛒</button>
+        </div>
+    </div>
+    </template>
+  </section>
+  <!-- SECCION PRODUCTOS PS5-->
+  <section id="products-ps5">
+    <h2 class="title-products title-products-ps5">Catalogo de juegos Ps5 </h2>
+    <div class="products-ps5">
+      <!-- TEMPLATE DE CADA PRODUCTO -->
+      <template id="template-card">
+        <div class="card">
+          <img class="main-img" src="" alt="">
+          <div class="back">
+            <img class="sec-img" src="" alt="">
+            <pre></pre>
+          </div>
+          <p class="title-card">titulo</p>
+          <p class="price-card">precio</p>
+          <button>Agregar 🛒</button>
+        </div>
+    </div>
+    </template>
+  </section>
+  <!-- VENTANA MODAL  -->
+  <div class="modal-container visible">
+    <div class="modal">
+      <img class="main-img-modal" src="" alt="">
+      <p class="msg-modal"></p>
+      <p class="title-modal"></p>
+      <img class="accept" src="./Assets/accept-check-good-mark-ok-tick-svgrepo-com.svg" alt="">
+    </div>
+  </div>
+  <!-- VENTANA MODAL TIENE PRODUCTOS EN SU CARRITO -->
+  <div class="modal-container visible modal-cart">
+    <div class="modal">
+      <h2 class="red-p">Tenes productos guardados en tu carrito</h2>
+      <h2 class="red-p">Echale un ojo!</h2>
+      <img class="red-cart" src="./Assets/cart-go-svgrepo-com.svg" alt="">
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>Tenes alguna pregunta?</p>
+    <p>Contactanos</p>
+    <div class="social">
+      <a href=""><img src="./Assets/facebook-svgrepo-com(1).svg" alt=""></a>
+      <a href=""><img src="./Assets/instagram-svgrepo-com(1).svg" alt=""></a>
+      <a href=""><img src="./Assets/whatsapp-svgrepo-com(1).svg" alt=""></a>
+    </div>
+    <p class="copy">©Copyright Alejandro Ruiz</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
